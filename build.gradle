@@ -39,3 +39,19 @@ task makeWebDir(){
         paths.forEach(createDir)
     }
 }
+
+// gradle 生命周期以及勾子
+// 初始化 -> 配置 -> 执行
+gradle.beforeProject {
+    project ->
+        // 钩子
+}
+
+gradle.taskGraph.whenReady {
+    graph ->
+
+}
+
+gradle.buildFinished {
+
+}
