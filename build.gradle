@@ -9,11 +9,19 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
+    // 多仓库按顺序查找
+    mavenLocal()
     mavenCentral()
+    // 私服
+    maven {
+        url ''
+    }
 }
 
 
 dependencies {
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    // 运行时依赖，比如面向接口编程jdbc,那么没必要在编译时就依赖mysql-jdbc，只有运行时才用到
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
