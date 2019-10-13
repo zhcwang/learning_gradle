@@ -1,6 +1,23 @@
+import sun.security.util.Password
+
 allprojects {
     apply plugin : 'java'
     sourceCompatibility = 1.8
+    // 发布到私有仓库
+    apply plugin: 'maven-publish'
+    publishing{
+        publications{
+            myPusblish(MavenPublication){
+                from components.java
+            }
+        }
+        repositories {
+            maven {
+                name 'myReps'
+                url ''
+            }
+        }
+    }
 }
 
 subprojects {
