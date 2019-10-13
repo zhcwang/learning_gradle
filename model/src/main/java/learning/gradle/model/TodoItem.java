@@ -1,4 +1,4 @@
-package learning.gradle.todo;
+package learning.gradle.model;
 
 public class TodoItem {
 
@@ -28,7 +28,7 @@ public class TodoItem {
 
     @Override
     public String toString() {
-        return "TodoItem{" +
+        return "learning.gradle.model.TodoItem{" +
                 "name='" + name + '\'' +
                 ", hasDone=" + hasDone +
                 '}';

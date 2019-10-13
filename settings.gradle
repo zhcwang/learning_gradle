@@ -1,2 +1,6 @@
 rootProject.name = 'todo'
+// 根工程声明引入所有实体
+include 'web'
+include 'model'
+include 'persistence'
 

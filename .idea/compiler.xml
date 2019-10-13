@@ -2,6 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="module.main" target="1.8" />
+      <module name="module.test" target="1.8" />
+      <module name="module_main" target="1.8" />
+      <module name="module_test" target="1.8" />
+      <module name="repository.main" target="1.8" />
+      <module name="repository.module.main" target="1.8" />
+      <module name="repository.module.test" target="1.8" />
+      <module name="repository.test" target="1.8" />
+      <module name="repository_main" target="1.8" />
+      <module name="repository_test" target="1.8" />
       <module name="test.main" target="1.8" />
       <module name="test.test" target="1.8" />
     </bytecodeTargetLevel>

@@ -1,0 +1,8 @@
+dependencies {
+    // 持久层依赖实体类
+    compile project(":model")
+    // hibernate 依赖slf1.6.1 和 logback都依賴slf 1.7.25,解决依赖冲突问题，gradle默认使用高版本的jar
+    compile (group: 'org.hibernate', name: 'hibernate-core', version: '3.6.3.Final'){
+        //  exclude(group: 'org.slf4j', module: 'slf4j-api')
+    }
+}
